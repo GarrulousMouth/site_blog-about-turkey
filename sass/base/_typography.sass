@@ -1,0 +1,89 @@
+@font-face 
+    font-family: 'OpenSans-SemiBold'
+    src: url(../fonts/OpenSans-SemiBold.ttf)
+
+@font-face 
+    font-family: 'OpenSans-Bold'
+    src: url(../fonts/OpenSans-Bold.ttf)
+
+@font-face 
+    font-family: 'OpenSans-Regular'
+    src: url(../fonts/OpenSans-Regular.ttf)
+
+@font-face 
+    font-family: 'OpenSans-Light'
+    src: url(../fonts/OpenSans-Light.ttf)
+
+@font-face 
+    font-family: 'Philosopher-Bold'
+    src: url(../fonts/Philosopher-Bold.ttf)
+
+@font-face 
+    font-family: 'Philosopher-Regular'
+    src: url(../fonts/Philosopher-Regular.ttf)
+
+
+h1
+    font-size: 14.4rem
+    font-family: 'Philosopher-Bold'
+    text-transform: uppercase
+    color: $color-white
+
+h2
+    font-size: 9.6rem
+    font-family: 'Philosopher-Bold'
+
+h3
+    font-size: 3.6rem
+    font-family: 'Philosopher-Bold'
+
+h4
+    font-size: 1.8rem
+    font-family: 'Philosopher-Bold'
+
+.chapter-text
+    font-family: 'OpenSans-Bold'
+    font-size: 1.8rem
+    color: $color-white
+    text-transform: uppercase
+
+.subtitle
+    text-transform: uppercase
+
+.small-signature
+    font-family: 'OpenSans-Regular'
+    font-size: 1.4rem
+    line-height: 1.9rem
+
+.title
+    position: relative
+    &::before
+        content: ''
+        width: 4.5rem
+        border: 2px solid $color-orange
+        position: absolute
+        top: 4rem
+        left: 0
+
+.text
+    font-family: 'OpenSans-Regular'
+    font-size: 1.6rem
+    line-height: 2.6rem
+
+.text-subtitle
+    font-size: 1.8rem
+    font-family: 'Philosopher-Regular'
+
+
+.little-text
+    font-family: 'OpenSans-Light'
+    font-size: 1.4rem
+    color: $color-white
+    text-transform: uppercase
+    &_not-uppercase
+        text-transform: none
+
+label
+    display: block
+
+

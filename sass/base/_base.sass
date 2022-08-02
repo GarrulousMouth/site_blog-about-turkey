@@ -1,0 +1,31 @@
+*, ::after, ::before
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+
+@mixin respond($breakpoint)
+    @if $breakpoint == phone 
+        @media only screen and (max-width: 420px)
+            @content
+
+    @if $breakpoint == tablet 
+        @media only screen and (max-width: 700px)
+            @content
+
+    @if $breakpoint == tab-port
+        @media only screen and (max-width: 932px)
+            @content
+    
+    @if $breakpoint == tab-land
+        @media only screen and (max-width: 1080px)
+            @content
+
+html
+    font-size: 62.5%
+    @include respond(tablet)
+        font-size: 55%
+    @include respond(phone)
+        font-size: 48%
+
+body
+    overflow-x: hidden

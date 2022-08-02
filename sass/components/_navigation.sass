@@ -1,0 +1,43 @@
+.logo
+    display: flex
+    align-items: center
+    transition: .4s all
+    &__icon
+        font-size: 6.8rem
+        margin-right: 1.5rem
+        &_black:before
+            color: black
+    &__text
+        text-transform: uppercase
+        color: $color-white
+        &_black
+            color: black
+    &_footer
+        align-items: start
+        margin-right: 2rem
+        @include respond(phone)
+            margin-bottom: 2rem
+
+.navigation
+    position: relative
+    padding-top: 3rem
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &__item
+        display: inline-block
+        &:not(:last-child)
+            margin-right: 4rem
+    &__link
+        &:link, &:visited
+            text-decoration: none
+            color: $color-white
+    &__list
+        transition: .4s all
+        @include respond(tab-port)
+            position: absolute
+            right: -200%
+        &_active
+            @include respond(tab-port)
+                right: 10vw
+        

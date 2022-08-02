@@ -1,0 +1,42 @@
+.btn-link
+    &:link, &:visited
+        display: inline-block
+        text-decoration: none
+        color: $color-black
+        font-size: 1.8rem
+        font-family: 'Philosopher-Bold'
+        border: .2rem solid $color-orange
+        padding: .4rem 1.7rem
+        border-radius: 10rem
+        transition: .4s all
+    &:hover
+        background-color: $color-orange
+        color: $color-white
+        span
+            color: $color-white
+    &_third
+        margin-bottom: 4rem
+        &:link, &:visited
+            color: $color-white
+
+.btn-up
+    width: 5rem
+    height: 5rem
+    background-color: $color-brown
+    text-align: center
+    border-radius: 50%
+    position: fixed
+    bottom: 5rem
+    right: 5rem
+    z-index: 2
+    opacity: 0
+    transition: .4s all
+    &__link
+        z-index: 3
+        &:link, &:visited
+            text-decoration: none
+            color: $color-white
+            font-size: 4rem
+    &:hover
+        cursor: pointer
+
