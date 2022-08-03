@@ -11,7 +11,7 @@
         text-transform: uppercase
         color: $color-white
         &_black
-            color: black
+            color: $color-black
     &_footer
         align-items: start
         margin-right: 2rem
@@ -32,6 +32,9 @@
         &:link, &:visited
             text-decoration: none
             color: $color-white
+        &_black
+            &:link, &:visited
+                color: $color-black
     &__list
         transition: .4s all
         @include respond(tab-port)

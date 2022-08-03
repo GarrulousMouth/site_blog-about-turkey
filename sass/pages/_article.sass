@@ -1,0 +1,70 @@
+.section-header_article
+        background: url('../img/article-header.jpg') center/cover no-repeat
+        padding-bottom: 5rem
+
+.article-main
+    position: relative
+    background: url('../img/index-second-section.jpg') center/cover no-repeat
+    background-size: 144rem
+    display: grid
+    grid-template-columns: minmax(2rem, 1fr) repeat(8, minmax(min-content, 14rem)) minmax(2rem, 1fr)
+    &__main
+        grid-column: 2 / -2
+        display: flex
+        flex-direction: column
+        align-items: center
+
+.gradient-article
+    position: absolute
+    top: -4rem
+    left: 0
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 60.42%)
+    height: 5rem
+    width: 100%
+
+.title-article
+    text-align: center
+    padding: 0 20%
+    padding-top: 5rem
+    width: 100%
+    @include respond(tab-port)
+        padding: 0
+    &__title
+        @include respond(tab-port)
+            font-size: 6rem
+
+.article-page
+    width: 60%
+    @include respond(tab-port)
+        width: 80%
+    @include respond(tablet)
+        width: 100%
+
+.text-article
+    &:not(:last-child)
+        margin-bottom: 3rem
+
+.article-page
+    margin-bottom: 5rem
+
+.article-author
+    width: 60%
+    margin-bottom: 5rem
+    &__text
+        margin-bottom: 1rem
+    @include respond(tab-port)
+        width: 80%
+
+
+.article-btn
+    width: 60%
+    text-align: right
+    margin-bottom: 10rem
+    @include respond(tab-port)
+        width: 80%
+
+
+.article-line
+    grid-column: 2 / -2
+    height: .5rem
+    background-color: $color-black        

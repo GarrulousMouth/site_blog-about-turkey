@@ -14,6 +14,8 @@
         background-color: $color-white
         margin-top: 1rem
         transition: .4s all
+        &_blog
+            background-color: $color-black
         &::after, &::before
             display: inline-block
             position: absolute
@@ -32,7 +34,7 @@
         display: block
 
 .hamburger-active
-    .hamburger__elem
+    .hamburger__elem, .hamburger__elem_blog
         margin-bottom: -2px
         background: transparent
         &::after
@@ -41,3 +43,29 @@
         &::before
             top: 0
             transform: rotate(-135deg)
+
+
+.hamburger
+    &__elem
+        &_blog
+            position: relative
+            display: inline-block
+            height: .3rem
+            width: 100%
+            background-color: $color-black
+            margin-top: 1rem
+            transition: .4s all
+            &::after, &::before
+                display: inline-block
+                position: absolute
+                left: 0
+                width: 100%
+                height: .3rem
+                background-color: $color-black
+                transition: .4s all
+            &::after
+                content: ''
+                top: 1rem
+            &::before
+                content: ''
+                top: -1rem
